@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="">
+    <div class="container"> <a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-circle-o"></i>
+        <b> EFT MODDING GUIDE</b>
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">Weapons</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Add Weapon</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Add Attachment</a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">FAQ</a> </li>
+        </ul> <a class="btn navbar-btn ml-md-2 text-light btn-secondary">Contact us</a>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card bg-dark" style="">
+            <div class="card-header text-light"> Here you can add a new weapon attachment to database </div>
+            <div class="card-body text-light">
+              <p>When adding new weapon remember to add all parameters correct, also make a FHD screenshot of it in modding menu .</p>
+            </div>
+          </div>
+          <form>
+            <div class="form-row mr-5">
+              <div class="form-group col-md-2" style="">
+                <label for="inputName" class="text-white">Name</label>
+                <input type="text" class="form-control w-100" id="inputWeapon" placeholder="example:Colt M4A1">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Caliber</label>
+                <select class="browser-default custom-select">
+                  <option value="" disabled="" selected=""></option>
+                  <option value="1">.366</option>
+                  <option value="2">12x70</option>
+                  <option value="3">20X70</option>
+                  <option value="4">4.6x30</option>
+                  <option value="5">40mm</option>
+                  <option value="6">5.45x39</option>
+                  <option value="7">5.56x45</option>
+                  <option value="8">7.62x25</option>
+                  <option value="9">7.62x39</option>
+                  <option value="10">7.62x51</option>
+                  <option value="11">7.62x54R</option>
+                  <option value="12">9x18</option>
+                  <option value="13">9x19</option>
+                  <option value="14">9x21</option>
+                  <option value="15">9x39</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Type</label>
+                <select class="browser-default custom-select">
+                  <option value="" disabled="" selected=""></option>
+                  <option value="1">Assault carabines</option>
+                  <option value="2">Assault rifles</option>
+                  <option value="3">Bolt action rifles</option>
+                  <option value="4">Machine guns</option>
+                  <option value="5">Marksman rifles</option>
+                  <option value="6">Melee weapons</option>
+                  <option value="7">Pistols</option>
+                  <option value="8">Shotguns</option>
+                  <option value="9">SMGs</option>
+                  <option value="10">Throwables</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Fire rate</label>
+                <input type="text" class="form-control w-100" id="inputBaseAcc" placeholder="700 rpm">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Effective distance</label>
+                <input type="text" class="form-control w-100" id="inputTypeAttach" placeholder="900m">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Fire type</label>
+                <input type="text" class="form-control w-100" id="inputTypeAttach" placeholder="Full auto/ Single fire">
+              </div>
+            </div>
+          </form>
+          <form>
+            <div class="form-row mr-5">
+              <div class="form-group col-md-2" style="">
+                <label for="inputName" class="text-white">Ergonomics</label>
+                <input type="text" class="form-control w-100" id="inputWeapon" placeholder="example:65">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputName" class="text-white">Accuracy</label>
+                <input type="text" class="form-control w-100" id="inputWeapon" placeholder="example:0.025">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Range</label>
+                <input type="text" class="form-control w-100" id="inputWeapon" placeholder="example:500m">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Vertical recoil</label>
+                <input type="text" class="form-control w-100" id="inputBaseAcc" placeholder="129">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Horizontal recoil</label>
+                <input type="text" class="form-control w-100" id="inputTypeAttach" placeholder="213">
+              </div>
+              <div class="form-group col-md-2" style="">
+                <label for="inputType" class="text-white">Muzzle velocity</label>
+                <input type="text" class="form-control w-100" id="inputTypeAttach" placeholder="812m/s">
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file col-md-3">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"><button type="submit" class="btn btn-primary">Add</button></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+  </div>
+</body>
+
+</html>
