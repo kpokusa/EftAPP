@@ -32,7 +32,7 @@ public class WeaponAttachmentController {
         }
 
         weaponAttachRepo.save(weaponAttachments);
-        model.addAttribute("weapon_attachments", weaponAttachRepo.findAll());
+        model.addAttribute("weaponAttachments", weaponAttachRepo.findAll());
         return "index";
     }
 }

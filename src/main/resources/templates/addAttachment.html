@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8">
@@ -39,32 +39,43 @@
                         <p>When adding new attachment remember to add all parameters correct, also make a screenshot of it.</p>
                     </div>
                 </div>
-                <form action="#" th:action="@{/addAttach}" th:object="${weapon_attachments}" method="post" xmlns:th="http://www.w3.org/1999/xhtml">
+                <form action="#" th:action="@{/addAttach}" th:object="${weaponAttachments}" method="post" >
                     <div class="form-row mr-5">
                         <div class="form-group col-md-2" style="">
                             <label for="attach_name" class="text-white">Name</label>
-                            <input type="text" class="form-control w-100" id="attach_name" placeholder="example: pk06">
+                            <input type="text" th:field="*{attach_name}" class="form-control w-100" id="attach_name" placeholder="example: pk06">
+                            <span th:if="${#fields.hasErrors('attach_name')}" th:errors="*{attach_name}"></span>
+
                         </div>
                         <div class="form-group col-md-2" style="">
                             <label for="attach_type" class="text-white">Type</label>
-                            <input type="text" class="form-control w-100" id="attach_type" placeholder="scope">
+                            <input type="text" th:field="*{attach_type}" class="form-control w-100" id="attach_type" placeholder="scope">
+                            <span th:if="${#fields.hasErrors('attach_type')}" th:errors="*{attach_type}"></span>
 
                         </div>
                         <div class="form-group col-md-2" style="">
                             <label for="ergonomics" class="text-white">Ergo</label>
-                            <input type="text" class="form-control w-100" id="ergonomics" placeholder="+15">
+                            <input type="text" th:field="*{ergonomics}" class="form-control w-100" id="ergonomics" placeholder="+15">
+                            <span th:if="${#fields.hasErrors('ergonomics')}" th:errors="*{ergonomics}"></span>
+
                         </div>
                         <div class="form-group col-md-2" style="">
                             <label for="muzzle_velocity" class="text-white">Muzzle velocity</label>
-                            <input type="text" class="form-control w-100" id="muzzle_velocity" placeholder="+0.75">
+                            <input type="text" th:field="*{muzzle_velocity}"class="form-control w-100" id="muzzle_velocity" placeholder="+0.75">
+                            <span th:if="${#fields.hasErrors('muzzle_velocity')}" th:errors="*{muzzle_velocity}"></span>
+
                         </div>
                         <div class="form-group col-md-2" style="">
                             <label for="accuracy" class="text-white">Accuracy</label>
-                            <input type="text" class="form-control w-100" id="accuracy" placeholder="0.4">
+                            <input type="text" th:field="*{accuracy}" class="form-control w-100" id="accuracy" placeholder="0.4">
+                            <span th:if="${#fields.hasErrors('accuracy')}" th:errors="*{accuracy}"></span>
+
                         </div>
                         <div class="form-group col-md-2" style="">
                             <label for="size_change" class="text-white">Size change</label>
-                            <input type="text" class="form-control w-100" id="size_change" placeholder="+1">
+                            <input type="text" th:field="*{size_change}"class="form-control w-100" id="size_change" placeholder="+1">
+                            <span th:if="${#fields.hasErrors('size_change')}" th:errors="*{size_change}"></span>
+
                         </div>
                     </div>
                     <div class="input-group">
